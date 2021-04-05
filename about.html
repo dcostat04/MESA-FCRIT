@@ -32,7 +32,7 @@
   color: white;
 }
 .blu{
-   background-color:  #84CEEB;
+   background-color: #5983e8;
 }
 .base {
   background-color: black;
@@ -40,16 +40,13 @@
   font-weight: 600;
   font-size: 0.8rem;
 }
-
+a{
+  color: black;
+}
 header h2 {
     font-weight: 700;
     font-size: 1.4rem;
-    color: white;
-}
-header h3 {
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: gray;
+    color: var(--secondary);
 }
 header h1 {
     font-weight: 800;
@@ -57,46 +54,70 @@ header h1 {
     color: #84CEEB;
 }
 .image {
-    min-height: 33rem;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(7, 7, 7, 0.6)), url('assets/front.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  
+  background-image:  url('assets/bg1.jpg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.navl{
+  color: black;
+  display: block;
+    padding: .5rem 1rem;
+}
+.image1{
+  
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(7, 7, 7, 0.6)), url('assets/machine.jpg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-device-width: 1366px) {
+  .image {
+    background-attachment: scroll;
+  }
+  .image1 {
+    background-attachment: scroll;
+  }
 }
     </style>
 
 </head>
 
 <body id="page-top">
-     <nav class="navbar navbar-dark navbar-expand-md py-4 fixed-top" id="app-navbar">
-        <div class="container-fluid"><a class="navbar-brand" href="#page-top" style="font-family: 'Roboto Slab', serif;">MESA Website</a>
-            <a class="navbar-brand" href="index.html">
-          <img src="assets/fcritlogo.png" width="70" height="60" alt="" />
-        </a>
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/iei.png" width="70" height="60" alt="" />
-        </a>
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/logonew.png" width="100" height="60" alt="" />
-        </a>
-        	<button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link  active" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="council.html">Council</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-dark navbar-expand-md image " id="app-navbar">
+        
+    <a class="navbar-brand" href="index.html">
+  <img src="assets/logo/fcritlogo.png" width="100" height="90" alt="" />
+</a>
+<a class="navbar-brand" href="index.html">
+  <img src="assets/logo/iei.png" width="95" height="90" alt="" />
+</a>
+<a class="navbar-brand" href="index.html">
+  <img src="assets/logo/logonew.png" width="160" height="90" alt="" />
+</a>
+  <button data-toggle="collapse" class="navbar-toggler " data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon "></span></button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="navl active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="navl" href="about.html">About</a></li>
+            <li class="nav-item"><a class="navl" href="council.html">Council</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
 
-    <div class=" pt-5 mb-5 pb-5">
+    <div class=" image pt-5 mb-5 pb-5">
         <div class="container">
             <section>
                 <div class="row calibre2019 mt-5">
                     <div class="col-12 col-md-8 order-2 order-md-1">
-          <h2 class="text-center mt-4">About CALIBRÉ</h2>
-          <p class="">
+          <h2 class="text-center mt-4 blak">About CALIBRÉ</h2>
+          <p class="blak">
             CALIBRÉ is the annual technical fest conducted by Fr. C. Rodrigues Institute of Technology (FCRIT),
             Mechanical Engineering Students’ Association in affiliation with Mechanical Engineering Department in the
             even semester. MESA is an intra-collegiate professional body of students. Under its umbrella, various
@@ -116,15 +137,15 @@ header h1 {
           </p>
                     </div>
           <div class="col-12 col-md-4 d-flex justify-content-center align-items-center order-1 order-md-2">
-            <img src="assets/calibre 2k21.png"  width="200" height="200" />
+            <img src="assets/logo/calibre 2k21.png "  width="300" height="300" />
           </div>
                 </div>
           </section>
           <section>
           <div class="row fcrit mt-5">
             <div class="col-12 col-md-8 order-2 order-md-1">
-              <h2 class="text-center mt-4">About FCRIT</h2>
-              <p class="">
+              <h2 class="text-center mt-4 blak">About FCRIT</h2>
+              <p class="blak">
                 FCRIT was established in 1994 and is a part of the Agnel Technical Education Complex at Vashi, which
                 itself was established in 1984. The institute is named after late Rev. Fr. Conceicao Rodrigues. FCRIT
                 persistently seeks and adopts innovative methods to improve the quality of education on a consistent
@@ -142,15 +163,15 @@ header h1 {
               </p>
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center align-items-center order-1 order-md-2">
-              <img src="assets/fcritlogo.png" width="200" height="200" />
+              <img src="assets/logo/fcritlogo.png" width="300" height="300" />
             </div>
           </div>
 </section>
-<section>
+<section class="">
           <div class="row mesa mt-5">
             <div class="col-12 col-md-8 order-2 order-md-1">
-              <h2 class="text-center mt-4">About MESA</h2>
-              <p class="">
+              <h2 class="text-center mt-4 blak">About MESA</h2>
+              <p class="blak">
                 MECHANICAL ENGINEERING STUDENTS’ ASSOCIATION popularly called as MESA is a collegiate organization which
                 relates the activities under Mechanical Engineering Department. MESA is among the most active student
                 bodies in the institute. Mentored by experienced faculty members of the Mechanical Engineering
@@ -165,15 +186,15 @@ header h1 {
               </p>
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center align-items-center order-1 order-md-2">
-              <img src="assets/logonew.png"  width="200" height="200"/>
+              <img src="assets/logo/logonew.png"  width="380" height="290"/>
             </div>
           </div>
 </section>
      <section>
           <div class="row bela mt-5">
             <div class="col-12 col-md-8 order-2 order-md-1">
-              <h2 class="text-center mt-4">About THE INSTITUTION OF ENGINEERS (India)</h2>
-              <p class="">
+              <h2 class="text-center mt-4 blak">About THE INSTITUTION OF ENGINEERS (India)</h2>
+              <p class="blak">
                 The Institution of Engineers (India) [IEI] is a statutory body established in 1920 and incorporated by
                 Royal Charter in 1935 to promote and update the advances in engineering and technology. It is the
                 largest multi-disciplinary professional body of engineers encompassing 15 (fifteen) engineering
@@ -194,7 +215,7 @@ header h1 {
               </p>
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center align-items-center order-1 order-md-2">
-              <img src="assets/iei.png"  width="200" height="200" />
+              <img src="assets/logo/iei.png"  width="300" height="300" />
             </div>
           </div>
         </div>
@@ -243,8 +264,8 @@ header h1 {
               <h6 class="white" class="mt-3" >FR. C. RODRIGUES INSTITUTE OF TECHNOLOGY</h6>
               <h6 class="white" >Agnel Technical Education Complex Sector 9-A, Vashi, Navi Mumbai,</h6>
               <h6 class="white">Maharashtra, India PIN - 400703</h6>
-              <h6 class="white" class="mt-4" >Phone:+91 9768715837</h6>
-              <h6 class="white">STUDENT NAME</h6>
+              <h6 class="white" class="mt-4" >Phone:+91 9326006087</h6>
+              <h6 class="white">Chinmay Desai</h6>
               <h6 class="white">(MESA President)</h6>
               <h6 class="white">Email: <a class="mlink" href="mailto:mesa@fcrit.ac.in?Subject=Hello%20again">mesa@fcrit.ac.in</a></h6>
             </div>
@@ -259,32 +280,33 @@ header h1 {
         <div>Designed By</div>
         <div class="myname">Trevor Dcosta</div>
         <div>Department of Computer Engineering</div>
-        <div>Managed By</div>
-        <div class="myname">Name</div>
-        <div>Department of Mechanical Engineering</div>
+        
         <div>Fr. C. Rodrigues Institute of Technology, Vashi</div>
       </div>
   
-      <footer id="app-navbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Brand 2021</span></div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li class="list-inline-item "><a href="#" class="blak">Privacy Policy</a></li>
-                        <li class="list-inline-item"><a href="#" class="blak">Terms of Use</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+      
+    <footer class="image1">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 white"><span class="copyright"> MESA-FCRIT 2021</span></div>
+              <div class="col-md-4">
+                  <ul class="list-inline social-buttons">
+                      
+                      <li class="list-inline-item"><a href="https://www.facebook.com/fcritmesa/"><i class="fa fa-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/fr-c-r-i-t-mesa-vashi-55839320a/"><i class="fa fa-linkedin"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.instagram.com/fcritmesa/"><i class="fa fa-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCpzlzf4hxzhVsPuiJJ6oIIQ"><i class="fa fa-youtube"></i></a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <ul class="list-inline quicklinks">
+                      <li class="list-inline-item "><a href="#" class="white">Privacy Policy</a></li>
+                      <li class="list-inline-item"><a href="#" class="white">Terms of Use</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
     
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
